@@ -20,3 +20,12 @@ services:
     restart: always
     ports:
       - "2525:25"
+  front: 
+    build: front
+    ports:
+      - "4200:80" 
+
+  back: 
+    image: back
+    ports: 
+      - "8080:8080"
